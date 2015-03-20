@@ -1,0 +1,84 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+    <br>
+    <h2>Edit Opportunity</h2>
+    <hr>
+    </hr>
+    </br>
+    <form name="myForm" action="" class="form-horizontal" novalidate >
+      <div class="form-group">
+        <label for="title">Title</label>
+        <input type="text" class="form-control" id="title" placeholder="My New Opportunity" ng-model="opportunity.opTitle">
+      </div>      
+        <div class="form-group">
+        <label for="buyer">Buyer</label>
+        <input type="text" class="form-control" id="buyer" placeholder="Buyer" ng-model="opportunity.buyerName">
+      </div>
+       <div class="form-group">
+        <label for="pop">Place of Performance</label>
+        <input type="text" class="form-control" id="pop" placeholder="Place of Performance" ng-model="opportunity.perfPlace">
+      </div>
+       <div class="form-group">
+        <label for="poc">Point of Contact</label>
+        <input type="text" class="form-control" id="poc" placeholder="Point of Contact" ng-model="opportunity.primaryContact">
+      </div>
+      
+         <div class="form-group">
+        <label for="setAside">Set Aside</label>
+        <select id="setAside" name="setAside" class="form-control" required ng-model="opportunity.setAside">
+          <option value="na" selected="">Choose One:</option>
+          <option value="8A">8A</option>
+          <option value="Full and Open">Full and Open</option>
+          <option value="Sole Source">Sole Source</option>
+          <option value="Small Business Set Aside">Small Business Set Aside</option>
+        </select>
+      </div>
+      
+      
+   <div class="form-group">
+        <label for="type"> Type</label>
+        <select id="type" name="type" class="form-control" required ng-model="opportunity.opType">
+          <option value="na" selected="">Choose One:</option>
+          <option value="Type 1">Type 1</option>
+          <option value="Type 2">Type 2</option>
+          <option value="Type 3">Type 3</option>
+          <option value="Type 4 ">Type 4</option>
+        </select>
+        </div>
+    
+  
+   
+      <div class="form-group">
+        <label for="publishedDate" class="control-label">Published Date</label>
+        <div class="controls">
+          <div class="input-group">
+            <input id="publishedDate" type="text" class="date-picker form-control" ng-model="opportunity.publishedDt" />
+            <label for="publishedDate" class="input-group-addon btn"><span class="glyphicon glyphicon-calendar"></span> </label>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="responseDate" class="control-label">Response Due Date</label>
+        <div class="controls">
+          <div class="input-group">
+            <input id="responseDate" type="text" class="date-picker form-control" ng-model="opportunity.respDueDt" />
+            <label for="responseDate" class="input-group-addon btn"><span class="glyphicon glyphicon-calendar"></span> </label>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="description"> Description</label>
+        <textarea name="description" id="description" class="form-control" rows="9" cols="25" required
+                                placeholder="Description" ng-model="opportunity.opDesc"></textarea>
+      </div>
+      <div class="form-group">
+        <a class="btn btn-primary btn-lg" ng-click="cancelOpportunity();">Cancel</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a class="btn btn-primary btn-lg" ng-click="editOpportunity(myForm.$valid);">Save</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+		<a class="btn btn-primary btn-lg" ng-click="publishEditOpportunity(myForm.$valid);">Publish</a>
+      </div>
+      </div>
+    </form>
+  </div>
+</div>
+</div>

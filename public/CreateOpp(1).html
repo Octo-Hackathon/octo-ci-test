@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Create New Opportunity</title>
+
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="html5shiv.min.js"></script>
+      <script src="respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+    <br>
+    <h2>Create New Opportunity</h2>
+    <hr>
+    </hr>
+    </br>
+    <form class="form-horizontal">
+      <div class="form-group">
+        <label for="exampleInputName2">Title</label>
+        <input type="text" class="form-control" id="exampleInputName2" placeholder="My New Opportunity">
+      </div>      
+        <div class="form-group">
+        <label for="exampleInputName2">Buyer</label>
+        <input type="text" class="form-control" id="exampleInputName2" placeholder="Buyer">
+      </div>
+       <div class="form-group">
+        <label for="exampleInputName2">Place of Performance</label>
+        <input type="text" class="form-control" id="exampleInputName2" placeholder="Place of Performance">
+      </div>
+       <div class="form-group">
+        <label for="exampleInputName2">Point of Contact</label>
+        <input type="text" class="form-control" id="exampleInputName2" placeholder="Point of Contact">
+      </div>
+      
+         <div class="form-group">
+        <label for="subject">Set Aside</label>
+        <select id="subject" name="subject" class="form-control" required>
+          <option value="na" selected="">Choose One:</option>
+          <option value="service">8A</option>
+          <option value="problem">Full and Open</option>
+          <option value="question">Sole Source</option>
+          <option value="praise">Small Business Set Aside</option>
+        </select>
+      </div>
+      
+      
+   <div class="form-group">
+        <label for="subject"> Type</label>
+        <select id="subject" name="subject" class="form-control" required>
+          <option value="na" selected="">Choose One:</option>
+          <option value="service">Type 1</option>
+          <option value="problem">Type 2</option>
+          <option value="question">Type 3</option>
+          <option value="praise">Type 4</option>
+        </select>
+        </div>
+    
+  
+   
+      <div class="form-group">
+        <label for="date-picker-2" class="control-label">Published Date</label>
+        <div class="controls">
+          <div class="input-group">
+            <input id="date-picker-2" type="text" class="date-picker form-control" />
+            <label for="date-picker-2" class="input-group-addon btn"><span class="glyphicon glyphicon-calendar"></span> </label>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="date-picker-2" class="control-label">Response Due Date</label>
+        <div class="controls">
+          <div class="input-group">
+            <input id="date-picker-2" type="text" class="date-picker form-control" />
+            <label for="date-picker-2" class="input-group-addon btn"><span class="glyphicon glyphicon-calendar"></span> </label>
+          </div>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="name"> Description</label>
+        <textarea name="message" id="message" class="form-control" rows="9" cols="25" required
+                                placeholder="Description"></textarea>
+      </div>
+      <div class="form-group">
+        <button type="button" class="btn btn-primary">Submit</button>
+      </div>
+      </div>
+    </form>
+  </div>
+</div>
+</div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="jquery.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+
+</body>
+</html>

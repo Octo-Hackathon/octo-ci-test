@@ -1,0 +1,64 @@
+<!doctype html>
+
+<!-- ASSIGN OUR ANGULAR MODULE -->
+<html>
+<head>
+    <!-- META -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Optimize mobile viewport -->
+
+    <title>Node/Angular Registration App</title>
+
+    <!-- SCROLLS -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"><!-- load bootstrap -->
+	<link rel="stylesheet" href="/javascripts/vendor/angular-ui-grid/ui-grid.css"><!-- load bootstrap -->
+    <style>
+        html                    { overflow-y:scroll; }
+        body                    { padding-top:50px; }
+        #todo-list              { margin-bottom:30px; }
+		.myGrid 				{  height: 250px;}
+		.blue { color: white;  background-color: #428bca; text-align: center;}
+		.red { color: red;}
+		#header{
+			position: fixed;
+			top: 0;
+			width: 500px;
+			margin: 0;
+			background: url('/img/Octo-logo.jpg') no-repeat;
+			height:100px;   
+			left: 1%;
+		}
+    </style>
+
+    <!-- SPELLS -->
+    <script src="/javascripts/vendor/jquery/dist/jquery.min.js"></script><!-- load jquery -->
+    <script src="/javascripts/vendor/angular/angular.min.js"></script><!-- load angular -->
+	<script src="/javascripts/vendor/angular-ui-grid/ui-grid.min.js"></script><!-- load ui-grid -->
+	<script src="/javascripts/vendor/angular-ui-router/release/angular-ui-router.min.js"></script><!-- load ui-router -->
+    <script src="/javascripts/app.js"></script>
+
+</head>
+<!-- SET THE CONTROLLER AND GET ALL TODOS -->
+<body ng-app="routerApp">
+
+<!-- NAVIGATION -->
+<nav class="navbar navbar-inverse" role="navigation">
+    <div class="navbar-header">
+        <a class="navbar-brand" ui-sref="#">MEAN Marketplace</a>
+    </div>
+    <ul class="nav navbar-nav">
+        <li><a ui-sref="vendor">Vendor</a></li>
+        <li><a ui-sref="buyer">Buyer</a></li>
+    </ul>
+</nav>
+
+<!-- MAIN CONTENT -->
+<!-- THIS IS WHERE WE WILL INJECT OUR CONTENT ============================== -->
+<div class="container">
+    <div ui-view></div>
+</div>
+
+
+
+</body>
+</html>
