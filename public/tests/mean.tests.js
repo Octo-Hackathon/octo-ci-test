@@ -3,7 +3,7 @@
 describe('main tests', function() {
   beforeEach(function() {module('routerApp');});
 
-	  describe('basic test 3', function($rootScope) {
+	  describe('basic test 2', function($rootScope) {
 	    it('vendor', inject(function($rootScope, $state, $injector, $compile) {
 
 	      var config = $state.get('vendor');
