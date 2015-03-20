@@ -1,0 +1,8 @@
+language: node_js
+node_js:
+- '0.10'
+deploy:
+  app: mean-test
+  provider: heroku	
+  api_key:
+    secure: AaMTpClEEeilDaO05CTPf7WI+vdDpHbrL7g5quFgRaVOyKn1PH1O3yWLJj60bP5TxMHx/qGR2krqMTWOFdCyb7ukK6fhJi2Ar1oazzyeJYtjCLqXjN1cU9/H5/ucLobvwvkOzENbYSjGOM3Z1U5VbMveMzymLGpFjOYicj+ixm4=
